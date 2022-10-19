@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>PORTFOLIO</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel='icon' href="data:, ">
+    <script src="https://kit.fontawesome.com/0e774f4d10.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.typekit.net/xvk8els.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.0/TextPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
+     <!--для анимации skills-->
+   
+    
+
+</head>
+
+<body>
+    
+  
+    
+    <div class="scrollUp scrollUp_hide" id="scrollTop">
+        <i class="far fa-arrow-alt-circle-up"></i>
+    </div>
+   
+    <a id="home"></a>
+       <!--меню bootstrap-->
+
+    
+
+    <nav class="navbar firstnav  navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-xxl">
+
+        <div class="translate">
+           <!--далее перевод языка с помощью 2 созданной зеркальной стр-->
+            <button><a class='lang' href="./index.html">EN</a></button> 
+        
+            <button><a class='lang' href="./index RU.html">RU</a></button> 
+        </div>
+            <!--лого-->
+   
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <!--раскрывается бургер <900-->
+                <span class="navbar-toggler-icon"></span>
+          </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav  mb-2 mb-lg-0 ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white me-2 btn" aria-current="page" href="#aboutMe">ABOUT ME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white me-2 btn" aria-current="page" href="#skills">SKILLS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white me-2 btn" href="#projects">JAVA SCRIPT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white me-2 btn" href="#react">REACT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white me-2 btn" style="opacity: 0.5;" aria-current="page" href="#contact">CONTACT</a>
+                           <!--контакты активная кнопка - btn btn-danger; btn везде делает пункты по центру-->
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="logoLetters">
+        
+        <div id="particles-js"></div>
+
+
+        <div class="logo navbar-brand">
+            <!--лого-->
+            <h1>
+                <span class="center letterl">L</span>
+                <span class="center letterI">i</span>
+                <span class="center letterU">u</span>
+                <span class="center letterB">b</span>
+                <span class="center letterO">o</span>
+                <span class="center letterUU">u</span>
+                <span class="center letterUU">➖</span>
+                <span class="center letterS">s</span>
+                <span class="center letterH">h</span>
+                <span class="center letterY">y</span>
+                <span class="center letterSS">s</span>
+                <span class="center letterHH">h</span>
+                <span class="center letterLL">l</span>
+                <span class="center letterOO">o</span>
+
+            </h1>
+        </div>
+    </div>
+
+    <div id="aboutMe">
+        <div class="containerTwo">
+         
+            <div class="boxAbout">
+                <div class="about">
+                    <div class="header">
+                        <h3 class="headerAbout"></h3>
+                    </div>
+                    <div class="MainPhoto" data-aos="flip-up" data-aos-duration="2000">
+                        <img class='myPhoto' src="./image/я.png" alt="my photo" width="250" height="230">
+                    </div>
+                    <div class="boxParAbout">
+                        <ul class="parAbout" data-aos="fade-right" data-aos-duration="2000"> 
+                            <li class="titleQuotes">Favorite phrase:</li> 
+                            <li class="prase1">'No pain no gain'</li>
+                            <li class="prase2">'Sound body sound mind'</li>
+                            <li class="prase3">'Sky's the limit!'</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="skills">
+                    <span class="content"></span>
+                  
+                </div>
+            </div>
+        </div>
+    </div> 
+
+
+    <div id="skills">
+        <div class="containerThree">
+            <div class="boxAbout reverse">
+                <div class="about">
+                    <div class="header">
+                        <h3 class="headerAbout"></h3>
+                    </div>
+                    <div class="MainPhoto" data-aos="flip-up" data-aos-duration="2000">
+                        <img class='myPhoto' src="./image/skills1.png" alt="my photo" width="250" height="230">
+                    </div>
+                    <div class="boxParAbout">
+                        <p class="parAbout1" data-aos="fade-left" data-aos-duration="2000">I'm a junior front-end developer. I study programming and practice every day. 
+                            <br>
+                            
+I'm constantly working on improving my skills, learning new things, I bring any project I have started to the end, improving my professional level. At this moment I've been studying React.js and Node.js.</p>
+                    </div>
+                </div>
+
+                <div class="skills">
+                    <span class="contentReverse"></span>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+
+
+
+      <!-- project -->
+      <a id="projects"></a>
+
+    <div class="project">
+
+        <div class="projectTextTitle" data-aos="zoom-out" data-aos-duration="2000">
+            <h2 class="projectsTitle">My projects - Java Script</h2>
+        </div>
+
+        <div class="twoItem">
+
+            <div class="sizeImg" data-aos="fade-right" data-aos-duration="2000">
+                <a href="https://english-with-pleasure.glitch.me" class="image__btn">
+                <img class="projectImg" src="./image/learn english with pleasure.png" alt="photo" width="400" height="300">
+                <div class="text-overlay">
+                    <p class="projectText app1"> Learning english</p>
+                </div>
+               </a>
+            </div>
+
+            <div class="sizeImg" data-aos="fade-left" data-aos-duration="2000">
+                <a href="https://barcelo.glitch.me"  class="image__btn">
+                <img class="projectImg" src="./image/Barcelona.png" alt="photo" width="400" height="300">
+                <div class="text-overlay">
+                    <p class="projectText app2">Barcelona</p>
+                </div>
+            </a>
+            </div>
+
+        </div>
+
+
+        <div class="twoItem">
+
+            <div class="sizeImg" data-aos="fade-right" data-aos-duration="2000">
+                <a href="https://true-o-false.glitch.me"  class="image__btn">
+                <img class="projectImg" src="./image/игра111.png" alt="photo" width="400" height="300">
+                <div class="text-overlay">
+                    <p class="projectText app3">Let's play?</p>
+                </div>
+               </a>
+            </div>
+
+            <div class="sizeImg" data-aos="fade-left" data-aos-duration="2000">
+                <a href="https://pizza-plus.glitch.me"  class="image__btn">
+                <img class="projectImg" src="./image/пицца.png" alt="photo" width="400" height="300">
+                <div class="text-overlay">
+                    <p class="projectText app4">Pizzeria</p>
+                </div>
+            </a>
+            </div>
+
+        </div>
+
+        <div class="twoItem">
+
+            <div class="sizeImg" data-aos="fade-left" data-aos-duration="2000">
+                <a href="https://meditation-water.glitch.me"  class="image__btn">
+                <img class="projectImg" src="./image/Meditation.png" alt="photo" width="400" height="300">
+                <div class="text-overlay">
+                    <p class="projectText app5">Meditation</p>
+                </div>
+            </a>
+            </div>
+
+            <div class="sizeImg" data-aos="fade-right" data-aos-duration="2000">
+                <a href="https://kitchen-time-clock.glitch.me"  class="image__btn">
+                <img class="projectImg" src="./image/Kitchen timer!.png" alt="photo" width="400" height="300">
+                <div class="text-overlay">
+                    <p class="projectText app6"> Kitchen timer</p>
+                </div>
+               </a>
+            </div>
+
+
+        </div>
+
+        <div class="twoItem">
+
+            <div class="sizeImg" data-aos="fade-left" data-aos-duration="2000">
+                <a href="https://sushi-liubou.glitch.me"  class="image__btn">
+                <img class="projectImg" src="./image/Sushi bar.png" alt="photo" width="400" height="300">
+                <div class="text-overlay">
+                    <p class="projectText app7">Sushi bar</p>
+                </div>
+            </a>
+            </div>
+
+            <div class="sizeImg" data-aos="fade-right" data-aos-duration="2000">
+                <a href="https://the-return-of-the-husband.glitch.me"  class="image__btn">
+                <img class="projectImg" src="./image/App for husband.png" alt="photo" width="400" height="300">
+                <div class="text-overlay">
+                    <p class="projectText app8"> app for husband</p>
+                </div>
+               </a>
+            </div>
+
+
+        </div>
+
+
+        
+        <div class="twoItem">
+
+            <div class="sizeImg" data-aos="fade-right" data-aos-duration="2000">
+                <a href=" https://financial-control.glitch.me"  class="image__btn">
+                <img class="projectImg" src="./image/Dream salary.png" alt="photo" width="400" height="300">
+                <div class="text-overlay">
+                    <p class="projectText app9"> Dream salary</p>
+                </div>
+               </a>
+            </div>
+
+            <div class="sizeImg" data-aos="fade-left" data-aos-duration="2000">
+                <a href="https://restaurant-animation.glitch.me"  class="image__btn">
+                <img class="projectImg" src="./image/Reastaurant.png" alt="photo" width="400" height="300">
+                <div class="text-overlay">
+                    <p class="projectText app10">Restaurant</p>
+                </div>
+            </a>
+            </div>
+
+        </div>
+
+
+    </div>
+
+<!--REACT-->
+
+ <a id="react"></a>
+
+    <div class="project">
+
+        <div class="projectTextTitle" data-aos="zoom-out" data-aos-duration="2000">
+            <h2 class="projectsTitle">My projects - REACT</h2>
+        </div>
+
+        <div class="twoItem">
+
+            <div class="sizeImg" data-aos="fade-right" data-aos-duration="2000">
+                <a href="https://iodo-band.netlify.app/" class="image__btn">
+                <img class="projectImg" src="./image/react/iodoband.png" alt="photo" width="400" height="300">
+                <div class="text-overlay">
+                    <p class="projectText app1"> Iodo-Band</p>
+                </div>
+               </a>
+            </div>
+
+            <div class="sizeImg" data-aos="fade-left" data-aos-duration="2000">
+                <a href="https://recipeapireact.netlify.app"  class="image__btn">
+                <img class="projectImg" src="./image/react/recipe.png" alt="photo" width="400" height="300">
+                <div class="text-overlay">
+                    <p class="projectText app2">Recipe-API</p>
+                </div>
+            </a>
+            </div>
+
+        </div>
+        <div class="twoItem">
+
+            <div class="sizeImg" data-aos="fade-right" data-aos-duration="2000">
+                <a href="https://florencia-react.netlify.app/" class="image__btn">
+                <img class="projectImg" src="./image/react/florencia.png" alt="photo" width="400" height="300">
+                <div class="text-overlay">
+                    <p class="projectText app1"> Florencia</p>
+                </div>
+               </a>
+            </div>
+
+            <div class="sizeImg" data-aos="fade-left" data-aos-duration="2000">
+                <a href="athlesure.netlify.app"  class="image__btn">
+                <img class="projectImg" src="./image/react/athlisure.png" alt="photo" width="400" height="300">
+                <div class="text-overlay">
+                    <p class="projectText app2">Сlothing store</p>
+                </div>
+            </a>
+            </div>
+
+        </div>
+
+    </div>
+
+<!--Contact-->
+
+    <a id="contact"></a>
+
+   
+    <div class="contactContainer">
+<div class="contactAll" data-aos="zoom-in" data-aos-duration="2000" >
+    <h2 class="contactTitle">CONTACT ME</h2>
+    <ul class='list'>
+        <li class="contactText phone"> <img src="https://img.icons8.com/external-those-icons-fill-those-icons/24/ffffff/external-phone-mobile-telephone-those-icons-fill-those-icons-5.png"/>phone: +375295580304</li>
+        <li class="contactText"> <img src="https://img.icons8.com/external-kmg-design-glyph-kmg-design/32/ffffff/external-email-contact-us-kmg-design-glyph-kmg-design-4.png"/> e-mail: slv5555555@mail.ru</li>
+
+    </ul>
+</div>
+</div>
+
+
+        <!-- bottom navbar bootstrap-->
+        <nav class="navbar navbar-expand-sm navbar-light bg-secondary">
+          
+            <div class="container-xxl">
+    
+                <ul class="navbar-nav ms-auto d-flex flex-row">
+                    <li class="nav-item">
+                        <a class="nav-link me-2" href="https://www.instagram.com/liubov.shyshlo/"> <img src="./image/instagram-new.png" width="50px" alt=""></a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a class="nav-link me-2" href="https://www.linkedin.com/in/liubou-shyshlo/"> <img src="https://img.icons8.com/material-rounded/50/000000/linkedin--v2.png" width="50px" alt=""></a>
+                    </li>
+                </ul>
+    
+            </div>
+        </nav>
+    
+
+    
+
+
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init();
+  </script>
+    <script src="./script.js"></script>
+
+
+</body>
+</html>

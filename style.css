@@ -1,0 +1,485 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient( #f9faf8, #ccfb47);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Далее аимация партиклс*/
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+  }
+  
+ /*кнопки языка*/
+.lang{
+    font-family: acumin-pro, sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    padding: 0 10px;
+    font-weight: bold;
+    background: #555656;
+    border: 1px solid #ccfb47;
+    border-radius: 5px;
+    font-size: 18px;
+}
+a.lang:hover{
+    color: #ccfb47;
+}
+
+.topnav {
+    /* сама строка мeню*/
+    height: 90px;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #000000;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    padding-top: 10px;
+}
+
+/*далее прыгающие буквы ..только css и html*/
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logoLetters{
+    position: relative;
+    height: 60px;
+}
+.logo {
+    position: absolute;
+    top: 2.5rem;
+    left: 2rem;
+
+}
+.logo h1 {
+    display: flex;
+}
+.logo h1 span {
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #ccfb47;
+    background-color:#555656;
+    opacity: 0.8;
+    width: 3.5rem;
+    height: 3.5rem;
+    margin: 0.5rem;
+    border-radius: 40%;
+    
+   
+}
+.logo h1 span:nth-child(1) {
+    animation: drop-letters 5s 0.2s infinite;
+}
+.logo h1 span:nth-child(2) {
+    animation: drop-letters 5s 0.3s infinite;
+}
+.logo h1 span:nth-child(3) {
+    animation: drop-letters 5s 0.4s infinite;
+}
+.logo h1 span:nth-child(4) {
+    animation: drop-letters 5s 0.5s infinite;
+}
+.logo h1 span:nth-child(5) {
+    animation: drop-letters 5s 0.6s infinite;
+}
+.logo h1 span:nth-child(6) {
+    animation: drop-letters 5s 0.7s infinite;
+}
+.logo h1 span:nth-child(7) {
+    animation: drop-letters 5s 0.8s infinite;
+}
+.logo h1 span:nth-child(8) {
+    animation: drop-letters 5s 0.9s infinite;
+}
+.logo h1 span:nth-child(9) {
+    animation: drop-letters 5s 1s infinite;
+}
+.logo h1 span:nth-child(10) {
+    animation: drop-letters 5s 1.1s infinite;
+}
+.logo h1 span:nth-child(11) {
+    animation: drop-letters 5s 1.2s infinite;
+}
+.logo h1 span:nth-child(12) {
+    animation: drop-letters 5s 1.3s infinite;
+}
+.logo h1 span:nth-child(13) {
+    animation: drop-letters 5s 1.4s infinite;
+}
+.logo h1 span:nth-child(14) {
+    animation: drop-letters 5s 1.5s infinite;
+}
+
+
+@keyframes drop-letters {
+    0% {
+        transform: translateY(0);
+    }
+    10% {
+        transform: translateY(0);
+    }
+    15% {
+        transform: translateY(-100%);
+    }
+    20% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+a.nav-link {
+font-size: 20px;
+}
+
+
+.nav-item a:hover {
+    color: #ccfb47 !important;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.topnav a:focus {
+    color: #fff;
+}
+
+
+
+/*about me*/
+.containerTwo, .containerThree {
+    margin-bottom: 100px;
+    margin-top: 80px;
+}
+
+.boxAbout {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #21252a;
+    /*на него reverse*/
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+        
+
+}
+
+.parAbout, .parAbout1 {
+    display: inline-block;
+    color: #fff;
+    font-family: acumin-pro, sans-serif;
+    font-size: 20px;
+    letter-spacing: .4mm;
+    list-style-type: none;
+
+}
+
+
+.boxParAbout {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  
+}
+.MainPhoto{
+    display: flex;
+  justify-content: center;
+    margin-top: 80px; 
+}
+.myPhoto{
+    padding: 15px;
+    border:  1px solid #ccfb47;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 0px #ffff; 
+}
+.titleQuotes{
+    font-size: 30px;
+    margin-bottom: 10px;
+    background: linear-gradient(to right, #ffff, #ccfb47 70%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+}
+
+
+.headerAbout {
+    position: absolute;
+    color:  #ccfb47;
+    font-size: 60px;
+    font-family: acumin-pro, sans-serif;
+}
+
+.reverse{
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: #3b3f48;
+}
+
+
+/*крутящаяся анимация*/
+.tagcloud { 
+    font-size: 15px;
+    width: 50%;
+    font-family: acumin-pro, sans-serif;
+    margin-top: 70px;
+}
+
+.tagcloud--item:hover {
+    color:  #d1d4c7;
+}
+
+.content, .contentReverse {
+    color: #ccfb47;
+   
+    text-transform: uppercase;
+}
+.contentRus{
+
+color: #ccfb47;
+   
+text-transform: uppercase;
+}
+
+
+
+
+.project{
+    background-image: url('./image/backgrounds/6203606.jpg');
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.projectsTitle{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: acumin-pro, sans-serif;
+}
+.twoItem {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /*max-width: 100vh;*/
+}
+.sizeImg{
+    position: relative;
+    max-width: 400px;
+    max-height: 500px;
+    padding: 20px;
+    margin: 30px 20px;
+    border:  2px solid #ccfb47;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px #ffff; 
+}
+
+
+
+.projectImg{
+    width: 100%;
+    height: 100%;
+    }
+    
+
+.projectText{
+    color: #242226;
+    font-size: 30px;
+    font-weight: bolder;
+    z-index: 10;
+    text-transform: uppercase;
+    font-family: acumin-pro, sans-serif;
+    text-decoration: underline;
+}
+.text-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #ccfb47;
+    z-index: 2;
+display: flex;
+justify-content: center;
+align-items: center;
+opacity: 0;
+transition: all 1s ease;
+border:  1px solid #ccfb47;
+border-radius: 10px;
+}
+
+/* картинки проектов выезжают вперед*/
+.text-overlay:hover{
+    opacity: 0.9;
+    transform: scale(1.1);
+    transition: 1s all;
+}
+.text-overlay > * {
+    transform: translateY(100px);
+    transition: all 1s;
+
+}
+.text-overlay:hover > * {
+    transform: translateY(0);
+/* надпись тудв-обр*/
+}
+
+
+/*contact*/
+
+.contactContainer{
+    margin-top: 100px;
+    text-align: center;
+  
+    background-color: #242529;
+   
+}
+.contactAll{
+    
+    display: flex;
+    flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ font-family: acumin-pro, sans-serif;
+
+
+}
+
+.list{
+    list-style: none;
+}
+.contactTitle{
+    margin-top: 20px;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #ccfb47;
+}
+.contactText{
+    font-family: acumin-pro, sans-serif;
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+
+
+#scrollTop {
+    /*cтрелка*/
+    position: fixed;
+    bottom: 80px;
+    right: 45px;
+    font-size: 40px;
+    z-index: 999;
+    transition: 0.5s;
+}
+.scrollUp {
+    opacity: 0.6;
+    color: #ccfb47;
+}
+.scrollUp_hide {
+    opacity: 0;
+}
+
+
+
+@media all and (max-width: 1300px) {
+
+    
+    .containerAbout {
+        flex-direction: column;
+        align-items: center;
+    }
+   
+}
+
+@media all and (max-width: 1000px) {
+    .logo h1 span {
+        font-size: 1rem;
+        font-weight: 700;
+        width: 2.5rem;
+        height: 2.5rem;
+        margin: 0.3rem;
+    }
+
+    @media all and (max-width: 900px) {
+        .boxAbout{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .containerThree{
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .containerTwo {
+            margin-bottom: 20px;
+        }
+        
+        .MainPhoto{
+            margin-top: 20px; 
+        }
+        
+        .tagcloud { 
+            margin-top: 10px;
+        }
+        
+        .project{
+            margin-bottom: 20px;
+        }
+        
+        .contactContainer{
+            margin-top: 20px;
+        }
+        .about {
+            padding: 20px;
+            width: 100%;
+        }
+       
+    }
+
+@media all and (max-width: 700px) {
+    .logo h1 span {
+        font-size: 0.8rem;
+        font-weight: 700;
+        width: 1.8rem;
+        height: 1.8rem;
+        margin: 0.2rem;
+    }
+}
+    .containerTwo{
+        margin-top: 20px;
+    }
+
+    @media all and (max-width: 550px) {
+        .logo h1 span {
+            width: 1.4rem;
+            height: 1.5rem;
+            margin: 0.2rem;
+        }
+        #scrollTop {
+            right: 77px;
+            font-size: 30px;
+            bottom: 70px;
+    }
+    .tagcloud { 
+        margin-top: 10px;
+    }
+}
